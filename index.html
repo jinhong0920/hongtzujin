@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="洪子晉的個人作品集，紀錄資訊實作、領導社群、競賽、服務與交流成果。">
+<title>洪子晉｜個人作品集</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f5f1;--white:#fff;--ink:#1d272c;--sub:#657076;--line:#deded8;--blue:#244c5b;--accent:#ad8060;--max:1190px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--bg);font-family:"Noto Serif TC", "Songti TC", "PMingLiU", "SimSun", serif;line-height:1.65}button,a{font:inherit}a{text-decoration:none;color:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid #d7aa71;outline-offset:3px}img{display:block;width:100%;height:100%;object-fit:cover}.container{width:min(var(--max),calc(100% - 56px));margin:auto}
+.site-header{background:var(--bg);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:15}.header-inner{min-height:72px;display:flex;justify-content:space-between;align-items:center;gap:24px}.logo{font-family:"Noto Serif TC", "Songti TC", "PMingLiU", "SimSun", serif;font-weight:700;letter-spacing:.1em;font-size:19px}.logo small{display:block;font-family:"Noto Serif TC", "Songti TC", "PMingLiU", "SimSun", serif;letter-spacing:.08em;color:var(--sub);font-size:12px;font-weight:400}.nav{display:flex;align-items:center;gap:26px}.nav a{font-size:16px}.nav a:hover{color:var(--accent)}
+.hero{padding:54px 0 42px;display:grid;grid-template-columns:1.6fr .65fr;gap:42px;align-items:center;border-bottom:1px solid var(--line)}.overline{font:700 12px/1.3 "Noto Serif TC", "Songti TC", "PMingLiU", "SimSun", serif;letter-spacing:.24em;color:var(--accent)}h1{margin:16px 0;font-size:clamp(38px,4.5vw,66px);line-height:1.27;letter-spacing:.03em;font-weight:700}h1 em{font-style:normal;color:var(--blue)}.hero-intro{font-size:18px;max-width:780px;color:#515c60;margin:0 0 22px}.hero-meta{display:flex;flex-wrap:wrap;gap:9px}.hero-meta span{font-size:14px;border:1px solid #d4d6d2;padding:5px 12px;border-radius:50px;background:#fdfdfb}.hero-photo{height:252px;overflow:hidden;position:relative;border-radius:4px;background:#e6e8e5;border:1px solid var(--line)}.hero-photo .img-fallback{height:100%;display:grid;place-content:center;text-align:center;color:#6c777a;padding:18px}.photo-label{font-size:12px;letter-spacing:.08em;margin-top:6px;color:#929a9b}
+.top-stats{display:grid;grid-template-columns:repeat(3,1fr);padding:25px 0;border-bottom:1px solid var(--line)}.stat{display:flex;align-items:center;gap:14px;padding:0 24px;border-right:1px solid var(--line)}.stat:first-child{padding-left:0}.stat:last-child{border:0}.stat b{font:700 36px "Noto Serif TC", "Songti TC", "PMingLiU", "SimSun", serif;color:var(--blue)}.stat span{color:var(--sub);font-size:15px}
+.section-heading{display:flex;justify-content:space-between;gap:25px;align-items:end;margin-bottom:23px}.section-heading h2{font-size:30px;line-height:1.2;margin:0 0 5px}.section-heading p{color:var(--sub);margin:0;font-size:16px}.works-section{padding:49px 0 35px}.filters{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:24px}.filter{border:1px solid #d5d7d2;background:transparent;color:#59666a;padding:8px 16px;border-radius:4px;transition:.16s}.filter:hover,.filter[aria-pressed=true]{background:var(--blue);border-color:var(--blue);color:white}.count{font:13px "Noto Serif TC", "Songti TC", "PMingLiU", "SimSun", serif;color:#8c9292}
+.work-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.work{min-width:0;text-align:left;background:var(--white);border:1px solid #e1e1db;border-radius:5px;overflow:hidden;display:block;padding:0;transition:transform .2s,box-shadow .2s,border-color .2s}.work:hover{transform:translateY(-4px);box-shadow:0 12px 24px rgba(32,44,47,.085);border-color:#bfc9c7}.work:focus-visible{outline-offset:4px}.work-image{height:186px;background:#e9eae7;position:relative;overflow:hidden}.work-image img{transition:transform .3s}.work:hover .work-image img{transform:scale(1.035)}.img-fallback{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;gap:5px;color:#7e898a;font-size:14px}.img-fallback span{font:13px "Noto Serif TC", "Songti TC", "PMingLiU", "SimSun", serif;letter-spacing:.03em}.work-copy{padding:17px 19px 16px;min-height:150px;display:flex;flex-direction:column}.category{color:#a27455;letter-spacing:.04em;font-size:13px}.work h3{font-size:20px;line-height:1.45;margin:6px 0}.work p{font-size:15px;color:#697578;margin:0;line-height:1.65;flex:1}.work-footer{display:flex;justify-content:space-between;align-items:center;color:var(--blue);font-size:13px;margin-top:15px;border-top:1px solid #eeeeea;padding-top:10px}
+.about-section{padding:43px 0;border-top:1px solid var(--line)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px}.about-grid h2,.contact-grid h2{font-size:29px;margin:0 0 14px}.about-grid p{color:#5d696d;margin:0}.skills{display:flex;flex-wrap:wrap;gap:9px;margin-top:13px}.skills span{padding:6px 12px;border:1px solid #d4d7d4;background:#fff;font-size:14px;border-radius:4px}.contact-section{padding:36px 0;border-top:1px solid var(--line)}.contact-grid{display:flex;align-items:center;justify-content:space-between;gap:30px}.contact-grid p{color:var(--sub);margin:0}.contact-info{font-size:15px;color:var(--sub);line-height:2}.footer{border-top:1px solid var(--line);padding:20px 0;color:#869092;font-size:13px}
+.modal{position:fixed;inset:0;background:rgba(18,28,34,.72);z-index:30;display:none;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.dialog{background:#fbfbf8;width:min(860px,100%);max-height:90vh;overflow:auto;position:relative;border-radius:6px;padding:29px}.close{position:sticky;top:0;float:right;border:1px solid #dde1dd;background:#fff;border-radius:50%;width:35px;height:35px;font:24px/1 "Noto Serif TC", "Songti TC", "PMingLiU", "SimSun", serif;z-index:2}.dialog h2{font-size:29px;margin:8px 0}.dialog p{color:#5b696c;margin:8px 0}.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:22px 0}.detail-photo{height:235px;overflow:hidden;background:#e9eae7;border:1px solid var(--line)}.detail-photo:first-child{grid-column:span 2;height:310px}.detail-subtitle{font-weight:700;color:var(--ink);margin-top:20px}.detail-link{display:inline-block;margin-top:14px;border-bottom:1px solid var(--blue);color:var(--blue);padding-bottom:2px}.edit-note{font-size:13px!important;color:#87918e!important}
+@media(max-width:850px){.hero{grid-template-columns:1fr 230px;gap:20px}.work-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.nav{gap:14px}.about-grid{gap:26px}}@media(max-width:600px){.container{width:calc(100% - 32px)}.header-inner{align-items:flex-start;flex-direction:column;padding:12px 0;gap:8px}.nav{flex-wrap:wrap;gap:15px}.hero{padding:31px 0;grid-template-columns:1fr}.hero-photo{height:220px}.top-stats{gap:0}.stat{gap:5px;display:block;padding:0 12px}.stat b{display:block;font-size:28px}.stat span{font-size:12px}.work-grid{grid-template-columns:1fr;gap:13px}.work-image{height:210px}.work-copy{min-height:0}.section-heading{display:block}.about-grid{grid-template-columns:1fr;gap:26px}.contact-grid{display:block}.contact-info{margin-top:14px}.detail-grid{gap:8px}.detail-photo{height:150px}.detail-photo:first-child{height:210px}.dialog{padding:19px}.section-heading h2{font-size:27px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+
+/* richer editorial sections without oversized whitespace */
+.story-strip{display:grid;grid-template-columns:1.05fr 1fr 1fr;gap:12px;padding:24px 0 10px}.story-strip article{background:#fff;border:1px solid var(--line);padding:20px 22px;border-left:3px solid var(--blue)}.story-strip h3{margin:2px 0 8px;font-size:19px}.story-strip p{margin:0;color:var(--sub);font-size:15px}.story-label{font:700 12px "Noto Serif TC", "Songti TC", "PMingLiU", "SimSun", serif;letter-spacing:.1em;color:var(--accent)}.approach-section{border-top:1px solid var(--line);padding:30px 0}.approach-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px}.approach-card{border:1px solid var(--line);background:#fff;padding:20px}.approach-card h3{margin:0 0 8px;font-size:20px}.approach-card p{margin:0;color:var(--sub);font-size:15px}.detail-info-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0}.detail-info-grid section{border:1px solid #e2e3dc;background:#fff;padding:15px 18px}.detail-info-grid h3{font-size:18px;margin:0 0 6px;color:var(--blue)}.detail-info-grid p{font-size:15px;margin:0}.detail-intro{font-size:17px!important}.work-bullets{display:flex;gap:7px;flex-wrap:wrap;margin-top:11px}.work-bullets span{border:1px solid #e7e3db;background:#f8f7f3;padding:3px 9px;color:#5d696d;font-size:12px}.work-copy{min-height:188px}.work-image{height:177px}.modal .detail-grid{margin-top:14px}.section-eyebrow{display:block;font:700 12px "Noto Serif TC", "Songti TC", "PMingLiU", "SimSun", serif;letter-spacing:.15em;color:var(--accent);margin-bottom:7px}
+@media(max-width:850px){.story-strip{grid-template-columns:1fr 1fr}.approach-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.story-strip,.approach-grid,.detail-info-grid{grid-template-columns:1fr}.story-strip{gap:8px}.story-strip article{padding:16px}.work-copy{min-height:0}}
+/* Modern editorial typography */
+body{letter-spacing:.012em;line-height:1.78;-webkit-font-smoothing:antialiased}
+.logo{font-size:18px;letter-spacing:.13em;font-weight:800}
+.logo small{font-size:10px;letter-spacing:.20em;font-weight:600}
+h1{font-weight:800;line-height:1.28;letter-spacing:-.025em}
+.section-heading h2,.about-grid h2,.contact-grid h2{font-weight:800;letter-spacing:-.025em}
+.work h3,.story-strip h3,.approach-card h3{font-weight:700;letter-spacing:-.012em}
+.overline,.story-label,.section-eyebrow{font-weight:800;letter-spacing:.16em}
+.nav a{font-weight:600;font-size:14px}
+.work p,.story-strip p,.approach-card p{line-height:1.75}
+.stat b{font-weight:800;letter-spacing:-.04em}
+
+/* 精簡卡片與彈出視窗：以宋體呈現，無漸層 */
+.work-copy{min-height:148px;padding:16px 18px}
+.work-copy h3{margin:5px 0 7px}
+.work-copy p{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.work-footer{margin-top:auto;padding-top:11px}
+.modal{background:rgba(20,29,33,.62)}
+.dialog{width:min(590px,100%);max-height:min(88vh,820px);padding:27px 30px;border-radius:12px;box-shadow:0 25px 70px rgba(0,0,0,.22)}
+.dialog h2{font-size:clamp(23px,3.5vw,31px);margin:6px 0 8px}
+.dialog .detail-intro{font-size:15px!important;color:#5d686b;margin:0 0 17px;line-height:1.8}
+.dialog .detail-cover{width:100%;height:240px;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:#eceeea}
+.dialog .detail-highlight{padding:16px 0 0;margin-top:15px;border-top:1px solid var(--line)}
+.dialog .detail-highlight strong{display:block;font-size:15px;color:var(--blue);margin-bottom:4px}
+.dialog .detail-highlight p{font-size:15px;line-height:1.75;margin:0}
+.dialog .detail-link{margin-top:13px;font-size:14px}
+@media(max-width:600px){.dialog{padding:20px;width:100%;border-radius:9px}.dialog .detail-cover{height:190px}}
+
+/* ── Editorial colour system · 低飽和純色，無漸層 ── */
+:root{
+  --bg:#f8f6f0; --white:#fffefa; --ink:#263333; --sub:#65716e;
+  --line:#deded4; --blue:#375a68; --accent:#bd7657;
+  --sage:#6b8375; --dust-blue:#607e92; --terracotta:#b46d55;
+  --lavender:#8b7e9e; --ochre:#a98545;
+}
+body{background:var(--bg);color:var(--ink)}
+.site-header{background:#fffefa;box-shadow:0 2px 12px rgba(34,51,49,.035)}
+.logo{color:#324e58}.logo small{color:#8a8176}
+.nav a:hover{color:var(--terracotta)}
+.hero{border-bottom-color:#dcdacc}.overline{color:#ad7057}
+h1 em{color:#375a68}
+.hero-meta span{background:#e9eee8;border-color:#d3dfd6;color:#536d61}
+.hero-meta span:nth-child(2){background:#e7edf1;border-color:#d3e0e5;color:#577485}
+.hero-meta span:nth-child(3){background:#f5e8dd;border-color:#ead6c6;color:#9e6e52}
+.hero-meta span:nth-child(4){background:#efebf3;border-color:#e0d9e9;color:#80728e}
+.hero-photo{background:#e5ebe6;border-color:#cad7ce;border-radius:12px}
+.top-stats{background:#f1f1e9;border-radius:12px;border:1px solid #e1e2d6;padding:21px 12px;margin-top:20px}
+.stat b{color:#476d6d}.stat:nth-child(2) b{color:#b16d55}.stat:nth-child(3) b{color:#84749b}
+.story-strip article:nth-child(1){background:#e9eee9;border-color:#d7e3d7;border-top:4px solid #6b8375}
+.story-strip article:nth-child(2){background:#e9eff2;border-color:#d5e1e8;border-top:4px solid #607e92}
+.story-strip article:nth-child(3){background:#f5eae2;border-color:#eedbd0;border-top:4px solid #bd7657}
+.story-strip .story-label{color:#6a7669}
+.story-strip article:nth-child(2) .story-label{color:#5f8192}
+.story-strip article:nth-child(3) .story-label{color:#ab775e}
+.filters{gap:10px}
+.filter{border-radius:999px;background:#fffefa;border-color:#deddd2;padding:9px 16px}
+.filter:hover{background:#e8efee;color:#375a68;border-color:#aabdbd}
+.filter[aria-pressed=true]{background:#375a68;color:#fff;border-color:#375a68}
+.filter[data-category="1"][aria-pressed=true]{background:#617d6d;border-color:#617d6d}
+.filter[data-category="2"][aria-pressed=true]{background:#607e92;border-color:#607e92}
+.filter[data-category="3"][aria-pressed=true]{background:#a77d4f;border-color:#a77d4f}
+.filter[data-category="4"][aria-pressed=true]{background:#b46d55;border-color:#b46d55}
+.filter[data-category="5"][aria-pressed=true]{background:#84749b;border-color:#84749b}
+.work{border-color:#e2e2d7;border-radius:12px;background:#fffefa;box-shadow:0 3px 12px rgba(40,56,54,.035)}
+.work:hover{transform:translateY(-5px);box-shadow:0 17px 32px rgba(38,55,55,.11);border-color:#b8c8bf}
+.work-image{background:#e8eeea}
+.work[data-category="1"] .work-image{background:#e6eee7}
+.work[data-category="2"] .work-image{background:#e7eef2}
+.work[data-category="3"] .work-image{background:#f4eedf}
+.work[data-category="4"] .work-image{background:#f6e9e1}
+.work[data-category="5"] .work-image{background:#ece8f2}
+.work .category{font-weight:700;color:#617d6d}
+.work[data-category="2"] .category{color:#5e8094}
+.work[data-category="3"] .category{color:#a17a47}
+.work[data-category="4"] .category{color:#b36e55}
+.work[data-category="5"] .category{color:#87769b}
+.work-footer{color:#587870}
+.work[data-category="2"] .work-footer{color:#607e92}
+.work[data-category="3"] .work-footer{color:#a98545}
+.work[data-category="4"] .work-footer{color:#b46d55}
+.work[data-category="5"] .work-footer{color:#8b7e9e}
+.skills span{background:#f1f4ed;border-color:#dce4d6;color:#526d5d}
+.skills span:nth-child(3n+2){background:#ebeff3;border-color:#dbe2e8;color:#607887}
+.skills span:nth-child(3n){background:#f4ece5;border-color:#e9dacf;color:#9c7058}
+.approach-card{background:#fffefa;border-radius:10px;border-color:#e2e0d6}
+.approach-card:nth-child(1){border-left:4px solid #6b8375}
+.approach-card:nth-child(2){border-left:4px solid #607e92}
+.approach-card:nth-child(3){border-left:4px solid #bd7657}
+.dialog{background:#fffefa;border:1px solid #e7e0d6;border-radius:16px;box-shadow:0 26px 70px rgba(24,40,45,.24)}
+.dialog .detail-cover{background:#e9eeea;border-radius:10px}
+.dialog .category{color:#a46f55;font-weight:700}
+.close:hover{background:#f3e8df;color:#8e533d}
+.detail-highlight{border-top-color:#e4ded3}
+.detail-highlight strong{color:#476c69}
+@media(prefers-reduced-motion:reduce){.work,.work-image img,.filter{transition:none!important}.work:hover{transform:none}}
+
+</style>
+</head>
+<body>
+<header class="site-header"><div class="container header-inner"><a href="#top" class="logo">HONG TZU JIN<small>PERSONAL PORTFOLIO</small></a><nav class="nav"><a href="#works">作品集</a><a href="#about">關於我</a><a href="#contact">聯絡方式</a></nav></div></header>
+<main id="top" class="container">
+<section class="hero"><div><div class="overline">LEARN · CREATE · CONNECT</div><h1>你好，我是 <em>洪子晉</em>。</h1><p class="hero-intro">國立聯合大學資訊管理學系學生。喜歡把想法付諸行動，在程式實作、活動企劃、團隊領導與跨文化交流中累積經驗。</p><div class="hero-meta"><span>資訊管理</span><span>程式與系統實作</span><span>領導與企劃</span><span>溝通表達</span></div></div><div class="hero-photo" id="hero-photo"></div></section>
+<div class="top-stats"><div class="stat"><b>15</b><span>項學習與實作成果</span></div><div class="stat"><b>05</b><span>大主題分類</span></div><div class="stat"><b>01</b><span>持續累積的學習歷程</span></div></div>
+<section class="story-strip" aria-label="學習亮點">
+<article><div class="story-label">LEADERSHIP</div><h3>從參與到帶領</h3><p>從營隊隊輔、現場服務，到交通服務社社長與社群經營，逐漸累積組織及協調經驗。</p></article>
+<article><div class="story-label">PRACTICE</div><h3>把課堂知識做出來</h3><p>透過計算機 App、電商平台與專題 GUI 等作品，練習讓想法成為能實際操作的功能。</p></article>
+<article><div class="story-label">EXPRESSION</div><h3>在交流中練習表達</h3><p>從街訪與大型活動主持，到跨文化分享，持續精進溝通、提問與臨場反應。</p></article>
+</section>
+<section class="works-section" id="works"><div class="section-heading"><div><h2>作品與經歷</h2><p>點擊作品，查看詳細內容及照片。依主題快速篩選。</p></div><div class="count" id="count">15 SELECTED WORKS</div></div><div class="filters" id="filters"></div><div class="work-grid" id="work-grid"></div></section>
+<section class="about-section" id="about"><div class="about-grid"><div><h2>關於我</h2><p>在大學期間，我除了資訊管理領域的課程，也積極參與社團、活動及競賽。從社群經營、團隊帶領、主持活動，到 App、電商平台與 GUI 的實作，每段經歷都讓我更了解如何把所學運用在不同情境。我喜歡在實際任務中學習：遇到不熟悉的工具先動手嘗試，碰到問題再查資料、討論並修正；在團隊中則重視分工、溝通與把事情完成。</p></div><div><h2>能力亮點</h2><p>以下是我目前持續學習並累積實作經驗的方向：</p><div class="skills"><span>社群經營</span><span>活動主持</span><span>團隊管理</span><span>MATLAB</span><span>App 實作</span><span>電子商務</span><span>GUI 設計</span><span>跨文化交流</span></div></div></div></section>
+<section class="approach-section"><div class="section-heading"><div><span class="section-eyebrow">MY LEARNING APPROACH</span><h2>我的學習方式</h2><p>這些成果背後，都是一次次的嘗試、調整與合作。</p></div></div><div class="approach-grid">
+<div class="approach-card"><h3>01｜主動嘗試</h3><p>願意接觸陌生任務，從競賽、課堂專案與活動中找出需要補強的技能。</p></div>
+<div class="approach-card"><h3>02｜實作驗證</h3><p>不只停留在概念，而是動手完成介面、活動素材與實際工作流程。</p></div>
+<div class="approach-card"><h3>03｜回顧修正</h3><p>無論有沒有得獎，都整理參與過程、問題與下一次可以改善的地方。</p></div>
+</div></section>
+<section class="contact-section" id="contact"><div class="contact-grid"><div><h2>保持聯繫</h2><p>歡迎交流專題、資訊應用、活動規劃與學習經驗。</p></div><div class="contact-info">國立聯合大學｜資訊管理學系<br>Email：<span>請在 HTML 填入信箱</span><br>GitHub／其他作品連結：<span>待補</span></div></div></section>
+</main><footer class="footer"><div class="container">© 2026 HONG TZU JIN · PERSONAL PORTFOLIO</div></footer>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="detail-title"><div class="dialog"><button class="close" id="close" aria-label="關閉詳細內容">×</button><div id="modal-content"></div></div></div>
+<script>
+/* ==========================================
+   編輯方式：
+   1. 個人照片放在 images/profile.jpg
+   2. 每項作品封面圖片 images/project01.jpg ~ project15.jpg
+   3. 詳細照片 images/project01-2.jpg、images/project01-3.jpg 等
+   4. 修改下方作品資料的 description、detail、role、outcome、link
+   5. 未放照片時會自動顯示灰色占位圖
+   ========================================== */
+const categories=['全部作品','領導與社群經營','資訊技術與實作','競賽參與與挑戰','校園服務與表達','產業探索與國際交流'];
+const works=[
+{title:'交通服務社社長暨 IG 社群經營',category:1,description:'參與社團管理、社群貼文製作與活動宣傳。',detail:'結合社團管理及 IG 社群經營，協助活動規劃、資訊傳達與貼文製作。',role:'社團管理、活動協調、社群內容規劃與製作',outcome:'可補上 IG 貼文截圖、活動照片、宣傳成果。'},
+{title:'大型營隊隊輔長與隊輔',category:1,description:'在營隊帶動小隊、協助活動執行與溝通。',detail:'於大型營隊擔任隊輔長及隊輔，帶動小隊互動，並與工作人員共同協助活動進行。',role:'小隊帶領、活動支援、現場溝通',outcome:'可補上營隊照片、活動紀錄與工作證明。'},
+{title:'MATLAB 入門學習證書',category:2,description:'完成 MATLAB 入門課程並取得學習證書。',detail:'透過 MATLAB 入門課程認識基本程式撰寫與運算概念。',role:'自主學習與課程練習',outcome:'可放入證書圖片與學習筆記。'},
+{title:'簡易計算機 App',category:2,description:'開發具備基本計算功能的簡易應用程式。',detail:'實作簡易計算機 App，練習介面配置、按鈕互動與基本計算邏輯。',role:'程式設計及介面實作',outcome:'可放入 App 畫面及實際操作截圖。'},
+{title:'電商平台實作',category:2,description:'將課堂所學應用於電商平台系統實作。',detail:'透過電商平台專案練習系統頁面及購物流程等功能的規劃與實作。',role:'請補上你實際負責的功能',outcome:'可補上首頁、商品頁、購物車等實際完成畫面。'},
+{title:'專題 GUI 圖形介面實作',category:2,description:'製作可操作的 GUI，整合專題功能展示。',detail:'於專題中進行圖形使用者介面的設計與實作，讓操作流程更直觀。',role:'GUI 介面設計及功能整合（依實際情況調整）',outcome:'可補上 GUI 截圖、使用流程及操作影片。'},
+{title:'苗青創想家黑客松競賽',category:3,description:'參與黑客松活動，累積提案與團隊合作經驗。',detail:'透過限時競賽練習創意構想、問題分析及團隊合作。',role:'請補上團隊中實際負責事項',outcome:'可放入競賽照片、提案簡報或成果證明。'},
+{title:'大隊接力季軍',category:3,description:'透過團隊合作獲得大隊接力季軍。',detail:'參與大隊接力競賽並獲得季軍，體會默契、分工與團隊合作的重要。',role:'團隊參賽成員',outcome:'可補上比賽照片、獎狀或頒獎畫面。'},
+{title:'Impact Star 競賽參與',category:3,description:'參與提案挑戰，從未入選經驗中累積反思。',detail:'參與 Impact Star 相關競賽，雖未入選，仍從構想、準備與嘗試中獲得經驗。',role:'請補上自己負責的提案工作',outcome:'可補上報名資料、簡報與參賽心得。'},
+{title:'校慶擺攤協助',category:4,description:'協助校慶攤位運作及現場活動。',detail:'於校慶活動協助攤位準備、現場服務與活動進行。',role:'攤位支援、現場服務',outcome:'可補上校慶攤位及團隊合照。'},
+{title:'新生入宿引導服務',category:4,description:'協助新生及家長了解入宿動線與流程。',detail:'參與新生入宿引導工作，協助現場動線、資訊說明與問題處理。',role:'入宿引導、現場支援',outcome:'可補上活動服務照片及紀錄。'},
+{title:'200 人大型活動主持人',category:4,description:'擔任約 200 人活動主持，掌握流程與現場氣氛。',detail:'於約 200 人參與的大型活動擔任主持人，練習流程掌控、即時反應與觀眾互動。',role:'活動主持、串場與現場互動',outcome:'可補上主持照片、活動流程及影片。'},
+{title:'街訪主持人',category:4,description:'透過街頭訪談練習提問、互動與表達。',detail:'擔任街訪主持人，進行現場訪問與受訪者互動，學習提問及臨場表達。',role:'訪談主持與受訪者互動',outcome:'可補上街訪影片及現場照片。'},
+{title:'中鼎集團企業訪談',category:5,description:'藉由企業訪談認識產業實務與職場需求。',detail:'參與中鼎集團企業訪談，了解企業運作、產業實務及職涯相關議題。',role:'訪談參與、資料整理（依實際情況調整）',outcome:'可補上訪談照片、問題整理及心得報告。'},
+{title:'與日本學生交流及家鄉分享',category:5,description:'向日本學生介紹自身家鄉並進行文化交流。',detail:'參與與日本學生的交流活動，分享自己的家鄉特色，練習跨文化溝通。',role:'家鄉介紹及交流分享',outcome:'可補上交流照片、發表簡報及活動紀錄。'}
+];
+
+// 補充各項作品的背景、過程、收穫與佐證素材；請依實際經驗自由修改。
+const expanded=[
+{context:'社團活動需要兼顧內部協調與對外資訊傳達，讓成員與同學掌握活動內容。',process:'整理公告重點、思考貼文呈現方式，配合活動時程發布訊息；也參與社團的工作協調與活動支援。',reflection:'學到好的社群經營不只是把資訊放上去，而是要讓讀者快速看懂，並照顧團隊執行細節。',evidence:'IG 貼文截圖、活動宣傳圖、社團工作照',tags:['領導統籌','貼文製作','資訊溝通']},
+{context:'營隊裡需要讓不同成員快速熟悉彼此、跟上活動節奏。',process:'擔任隊輔與隊輔長時，協助傳遞活動資訊、帶動互動、觀察隊員狀況並配合工作團隊。',reflection:'比起自己把事情做好，更重要的是理解組員需要什麼，讓團隊一起順利完成任務。',evidence:'營隊現場照片、工作證明、團隊合影',tags:['團隊帶領','現場應變','合作']},
+{context:'希望建立程式運算與 MATLAB 操作的基本功。',process:'完成 MATLAB 入門學習內容，練習基本語法、變數、資料處理與簡單運算。',reflection:'透過循序操作建立程式基礎，也能作為之後專題實作的學習起點。',evidence:'MATLAB 入門證書與完成日期、課程畫面',tags:['MATLAB','自主學習','證書']},
+{context:'用小型作品練習從使用者操作到計算結果的完整流程。',process:'規劃計算機介面的按鍵與輸入方式，撰寫基礎運算邏輯，逐項測試使用者操作。',reflection:'了解到即使功能簡單，介面回饋與例外輸入也會影響使用體驗。',evidence:'App 畫面、操作影片、程式碼截圖',tags:['App 開發','介面設計','邏輯實作']},
+{context:'將資訊系統的課程概念放入實際的購物情境。',process:'從頁面與功能需求著手，配合專案設計使用者操作流程；具體功能請依實作版本補充。',reflection:'電商平台除了畫面，還涉及操作流程、資料處理與功能銜接。',evidence:'實際畫面、功能流程圖、程式碼或展示影片',tags:['系統實作','電子商務','使用流程']},
+{context:'希望把專題操作流程整理成更直觀的圖形介面。',process:'依專題需求規劃按鈕、輸入與結果呈現方式，整合需要展示的功能；請補上實際使用的開發工具。',reflection:'操作介面不只是視覺設計，也要讓其他人理解系統目前正在做什麼。',evidence:'GUI 主畫面、操作過程、執行結果截圖',tags:['GUI','專題實作','互動介面']},
+{context:'透過限時團隊挑戰，嘗試從生活或地方議題發想解決方式。',process:'與團隊討論問題、整理構想與提案方向；請補上比賽題目及你的實際分工。',reflection:'競賽讓我練習在有限時間內整合意見，將想法整理成能清楚表達的方案。',evidence:'競賽合照、提案投影片、參賽證明',tags:['黑客松','創意提案','團隊合作']},
+{context:'大隊接力需要每位隊員的節奏與交棒默契。',process:'參與練習及正式比賽，與隊友互相配合並共同完成賽事。',reflection:'季軍是團隊共同努力的成果，也讓我更理解互相支持的重要。',evidence:'季軍獎狀、比賽與頒獎照片',tags:['季軍','運動','團隊精神']},
+{context:'希望把創意發想帶進正式提案與競賽情境。',process:'參與 Impact Star 競賽準備與提案過程，雖然最後未入選，但有機會檢視構想的表達與完整性。',reflection:'沒有入選也有收穫，重要的是釐清可改進的地方，再運用到下一次挑戰。',evidence:'企劃內容、參賽紀錄、修改前後的提案版本',tags:['參賽經歷','提案反思','成長']},
+{context:'大型校慶活動的攤位需要即時配合現場人潮及工作分工。',process:'協助攤位準備、服務與現場活動支援，配合其他成員完成工作。',reflection:'透過實際服務學到活動開始前的準備，以及現場的溝通與應變都很重要。',evidence:'攤位照片、活動紀錄、工作合照',tags:['校慶','活動支援','服務']},
+{context:'新生與家長對校園環境及入宿流程可能還不熟悉。',process:'協助說明入宿動線、提供現場指引，遇到問題時協助轉介或向負責人員確認。',reflection:'用對方聽得懂的方式說明資訊，是服務工作的核心。',evidence:'引導現場照片、服務紀錄',tags:['新生服務','引導','溝通']},
+{context:'面對約 200 人的活動現場，需要清楚掌控節奏並與觀眾互動。',process:'依活動流程準備主持內容、銜接各個環節，在現場依狀況調整說話節奏與互動方式。',reflection:'大型活動主持讓我更重視事前準備，也練習在眾人面前保持表達清楚。',evidence:'主持照片、主持稿、流程表、影片',tags:['約200人','主持','臨場反應']},
+{context:'街訪需要在自然互動中引導受訪者分享想法。',process:'整理訪談主題與問題，進行現場提問，依受訪者回答延伸對話。',reflection:'好的主持不是一直說話，而是善於傾聽並提出下一個合適的問題。',evidence:'街訪影片、訪談問題單、現場側拍',tags:['訪問','主持','傾聽']},
+{context:'透過企業訪談了解課堂外的產業與工作現場。',process:'參與中鼎集團相關訪談與交流，整理觀察或訪談問題；請依實際內容補入訪談主題。',reflection:'能更具體思考資訊管理相關能力，在真實企業環境中如何發揮作用。',evidence:'企業訪談合影、問題清單、報告或心得',tags:['企業訪談','產業認識','職涯探索']},
+{context:'和不同文化背景的學生分享自己熟悉的家鄉。',process:'整理家鄉的特色與想介紹的內容，參與與日本學生的交流和分享。',reflection:'介紹熟悉的事物也需要站在聽眾角度思考，跨文化交流更讓我注意說明方式。',evidence:'交流活動照片、分享簡報、合照',tags:['日本交流','文化分享','表達']}
+];
+works.forEach((w,i)=>Object.assign(w,expanded[i]));
+
+const pad=i=>String(i+1).padStart(2,'0');
+function imageNode(src,filename,cls=''){
+ const wrap=document.createElement('div');wrap.className=cls;
+ const img=document.createElement('img');img.src=src;img.alt=filename;img.loading='lazy';
+ const fallback=document.createElement('div');fallback.className='img-fallback';fallback.innerHTML='<strong>照片預留區</strong><span>'+filename+'</span>';
+ img.onload=()=>{fallback.remove();};img.onerror=()=>{img.remove();};wrap.append(img,fallback);return wrap;
+}
+const hero=document.getElementById('hero-photo');hero.appendChild(imageNode('images/profile.jpg','profile.jpg'));
+let active=0;
+function renderFilters(){const f=document.getElementById('filters');f.innerHTML='';categories.forEach((c,i)=>{const b=document.createElement('button');b.className='filter';b.dataset.category=String(i);b.textContent=c;b.setAttribute('aria-pressed',String(active===i));b.onclick=()=>{active=i;renderFilters();renderWorks()};f.append(b)})}
+function shorten(text,max=53){return text.length>max?text.slice(0,max).replace(/[，、；： ]+$/,'')+'…':text}
+function renderWorks(){
+ const g=document.getElementById('work-grid');g.innerHTML='';let total=0;
+ works.forEach((w,i)=>{
+  if(active&&w.category!==active)return;total++;
+  const card=document.createElement('button');card.type='button';card.className='work';card.dataset.category=String(w.category);
+  const cover=imageNode('images/project'+pad(i)+'.jpg','project'+pad(i)+'.jpg','work-image');
+  const copy=document.createElement('div');copy.className='work-copy';
+  const category=document.createElement('div');category.className='category';category.textContent=categories[w.category];
+  const h3=document.createElement('h3');h3.textContent=w.title;
+  const desc=document.createElement('p');desc.textContent=shorten(w.description,46);
+  const foot=document.createElement('div');foot.className='work-footer';foot.innerHTML='<span>點擊查看</span><span aria-hidden="true">↗</span>';
+  copy.append(category,h3,desc,foot);card.append(cover,copy);
+  card.addEventListener('click',()=>openDetail(w,i));g.append(card);
+ });document.getElementById('count').textContent=total+' SELECTED WORKS';
+}
+const modal=document.getElementById('modal');let previousFocus;
+function openDetail(w,i){
+ previousFocus=document.activeElement;
+ const content=document.getElementById('modal-content');content.replaceChildren();
+ const header=document.createElement('div');
+ const cat=document.createElement('div');cat.className='category';cat.dataset.category=String(w.category);cat.textContent=categories[w.category];
+ const title=document.createElement('h2');title.id='detail-title';title.textContent=w.title;
+ const summary=document.createElement('p');summary.className='detail-intro';summary.textContent=shorten(w.detail||w.description,95);
+ header.append(cat,title,summary);
+ const photo=imageNode('images/project'+pad(i)+'.jpg','project'+pad(i)+'.jpg','detail-photo detail-cover');
+ const highlight=document.createElement('div');highlight.className='detail-highlight';
+ const label=document.createElement('strong');label.textContent='我的參與';
+ const detail=document.createElement('p');detail.textContent=shorten(w.role||w.process||w.description,110);
+ highlight.append(label,detail);
+ content.append(header,photo,highlight);
+ if(w.link){const a=document.createElement('a');a.className='detail-link';a.href=w.link;a.target='_blank';a.rel='noopener noreferrer';a.textContent='查看成果連結 ↗';content.append(a)}
+ modal.classList.add('open');document.body.style.overflow='hidden';document.getElementById('close').focus();
+}
+function closeModal(){modal.classList.remove('open');document.body.style.overflow='';if(previousFocus)previousFocus.focus()}
+document.getElementById('close').onclick=closeModal;modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});window.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('open'))closeModal()});renderFilters();renderWorks();
+</script>
+</body></html>

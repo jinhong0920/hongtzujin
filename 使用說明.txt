@@ -1,0 +1,1 @@
+打開 index.html 即可瀏覽。圖片放置在 images/profile.jpg 與 images/project01.jpg 至 project15.jpg。保留 15 項作品與分類篩選、點擊彈出詳細視窗。全部使用純色，沒有漸層。
