@@ -11,37 +11,17 @@
 :root{--bg:#f6f5f1;--white:#fff;--ink:#1d272c;--sub:#657076;--line:#deded8;--blue:#244c5b;--accent:#ad8060;--max:1190px}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--bg);font-family:"Noto Serif TC", "Songti TC", "PMingLiU", "SimSun", serif;line-height:1.65}button,a{font:inherit}a{text-decoration:none;color:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid #d7aa71;outline-offset:3px}img{display:block;width:100%;height:100%;object-fit:cover}.container{width:min(var(--max),calc(100% - 56px));margin:auto}
 .site-header{background:var(--bg);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:15}.header-inner{min-height:72px;display:flex;justify-content:space-between;align-items:center;gap:24px}.logo{font-family:"Noto Serif TC", "Songti TC", "PMingLiU", "SimSun", serif;font-weight:700;letter-spacing:.1em;font-size:19px}.logo small{display:block;font-family:"Noto Serif TC", "Songti TC", "PMingLiU", "SimSun", serif;letter-spacing:.08em;color:var(--sub);font-size:12px;font-weight:400}.nav{display:flex;align-items:center;gap:26px}.nav a{font-size:16px}.nav a:hover{color:var(--accent)}
-.hero{padding:54px 0 42px;display:grid;grid-template-columns:1.6fr .65fr;gap:42px;align-items:center;border-bottom:1px solid var(--line)}.overline{font:700 12px/1.3 "Noto Serif TC", "Songti TC", "PMingLiU", "SimSun", serif;letter-spacing:.24em;color:var(--accent)}h1{margin:16px 0;font-size:clamp(38px,4.5vw,66px);line-height:1.27;letter-spacing:.03em;font-weight:700}h1 em{font-style:normal;color:var(--blue)}.hero-intro{font-size:18px;max-width:780px;color:#515c60;margin:0 0 22px}.hero-meta{display:flex;flex-wrap:wrap;gap:9px}.hero-meta span{font-size:14px;border:1px solid #d4d6d2;padding:5px 12px;border-radius:50px;background:#fdfdfb}.hero-photo {
-    width: 100%;
-    max-width: 320px;
-    aspect-ratio: 4 / 5;
-    max-height: 350px;
-    margin: 0 auto;
-    border-radius: 14px;
-    overflow: hidden;
-    background-color: #f5f3ee;
-}
+.hero{padding:54px 0 42px;display:grid;grid-template-columns:1.6fr .65fr;gap:42px;align-items:center;border-bottom:1px solid var(--line)}.overline{font:700 12px/1.3 "Noto Serif TC", "Songti TC", "PMingLiU", "SimSun", serif;letter-spacing:.24em;color:var(--accent)}h1{margin:16px 0;font-size:clamp(38px,4.5vw,66px);line-height:1.27;letter-spacing:.03em;font-weight:700}h1 em{font-style:normal;color:var(--blue)}.hero-intro{font-size:18px;max-width:780px;color:#515c60;margin:0 0 22px}.hero-meta{display:flex;flex-wrap:wrap;gap:9px}.hero-meta span{font-size:14px;border:1px solid #d4d6d2;padding:5px 12px;border-radius:50px;background:#fdfdfb}
 
-.hero-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-}.photo-label{font-size:12px;letter-spacing:.08em;margin-top:6px;color:#929a9b}
+.photo-label{font-size:12px;letter-spacing:.08em;margin-top:6px;color:#929a9b}
 .top-stats{display:grid;grid-template-columns:repeat(3,1fr);padding:25px 0;border-bottom:1px solid var(--line)}.stat{display:flex;align-items:center;gap:14px;padding:0 24px;border-right:1px solid var(--line)}.stat:first-child{padding-left:0}.stat:last-child{border:0}.stat b{font:700 36px "Noto Serif TC", "Songti TC", "PMingLiU", "SimSun", serif;color:var(--blue)}.stat span{color:var(--sub);font-size:15px}
 .section-heading{display:flex;justify-content:space-between;gap:25px;align-items:end;margin-bottom:23px}.section-heading h2{font-size:30px;line-height:1.2;margin:0 0 5px}.section-heading p{color:var(--sub);margin:0;font-size:16px}.works-section{padding:49px 0 35px}.filters{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:24px}.filter{border:1px solid #d5d7d2;background:transparent;color:#59666a;padding:8px 16px;border-radius:4px;transition:.16s}.filter:hover,.filter[aria-pressed=true]{background:var(--blue);border-color:var(--blue);color:white}.count{font:13px "Noto Serif TC", "Songti TC", "PMingLiU", "SimSun", serif;color:#8c9292}
 .work-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.work{min-width:0;text-align:left;background:var(--white);border:1px solid #e1e1db;border-radius:5px;overflow:hidden;display:block;padding:0;transition:transform .2s,box-shadow .2s,border-color .2s}.work:hover{transform:translateY(-4px);box-shadow:0 12px 24px rgba(32,44,47,.085);border-color:#bfc9c7}.work:focus-visible{outline-offset:4px}.work-image{height:186px;background:#e9eae7;position:relative;overflow:hidden}.work-image img{transition:transform .3s}.work:hover .work-image img{transform:scale(1.035)}.img-fallback{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;gap:5px;color:#7e898a;font-size:14px}.img-fallback span{font:13px "Noto Serif TC", "Songti TC", "PMingLiU", "SimSun", serif;letter-spacing:.03em}.work-copy{padding:17px 19px 16px;min-height:150px;display:flex;flex-direction:column}.category{color:#a27455;letter-spacing:.04em;font-size:13px}.work h3{font-size:20px;line-height:1.45;margin:6px 0}.work p{font-size:15px;color:#697578;margin:0;line-height:1.65;flex:1}.work-footer{display:flex;justify-content:space-between;align-items:center;color:var(--blue);font-size:13px;margin-top:15px;border-top:1px solid #eeeeea;padding-top:10px}
 .about-section{padding:43px 0;border-top:1px solid var(--line)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px}.about-grid h2,.contact-grid h2{font-size:29px;margin:0 0 14px}.about-grid p{color:#5d696d;margin:0}.skills{display:flex;flex-wrap:wrap;gap:9px;margin-top:13px}.skills span{padding:6px 12px;border:1px solid #d4d7d4;background:#fff;font-size:14px;border-radius:4px}.contact-section{padding:36px 0;border-top:1px solid var(--line)}.contact-grid{display:flex;align-items:center;justify-content:space-between;gap:30px}.contact-grid p{color:var(--sub);margin:0}.contact-info{font-size:15px;color:var(--sub);line-height:2}.footer{border-top:1px solid var(--line);padding:20px 0;color:#869092;font-size:13px}
 .modal{position:fixed;inset:0;background:rgba(18,28,34,.72);z-index:30;display:none;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.dialog{background:#fbfbf8;width:min(860px,100%);max-height:90vh;overflow:auto;position:relative;border-radius:6px;padding:29px}.close{position:sticky;top:0;float:right;border:1px solid #dde1dd;background:#fff;border-radius:50%;width:35px;height:35px;font:24px/1 "Noto Serif TC", "Songti TC", "PMingLiU", "SimSun", serif;z-index:2}.dialog h2{font-size:29px;margin:8px 0}.dialog p{color:#5b696c;margin:8px 0}.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:22px 0}.detail-photo{height:235px;overflow:hidden;background:#e9eae7;border:1px solid var(--line)}.detail-photo:first-child{grid-column:span 2;height:310px}.detail-subtitle{font-weight:700;color:var(--ink);margin-top:20px}.detail-link{display:inline-block;margin-top:14px;border-bottom:1px solid var(--blue);color:var(--blue);padding-bottom:2px}.edit-note{font-size:13px!important;color:#87918e!important}
-@media(max-width:850px){.hero{grid-template-columns:1fr 230px;gap:20px}.work-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.nav{gap:14px}.about-grid{gap:26px}}@media(max-width:600px){.container{width:calc(100% - 32px)}.header-inner{align-items:flex-start;flex-direction:column;padding:12px 0;gap:8px}.nav{flex-wrap:wrap;gap:15px}.hero{padding:31px 0;grid-template-columns:1fr}.hero-photo{height:220px}.top-stats{gap:0}.stat{gap:5px;display:block;padding:0 12px}.stat b{display:block;font-size:28px}.stat span{font-size:12px}.work-grid{grid-template-columns:1fr;gap:13px}.work-image{height:210px}.work-copy{min-height:0}.section-heading{display:block}.about-grid{grid-template-columns:1fr;gap:26px}.contact-grid{display:block}.contact-info{margin-top:14px}.detail-grid{gap:8px}.detail-photo{height:150px}.detail-photo:first-child{height:210px}.dialog{padding:19px}.section-heading h2{font-size:27px}}
+@media(max-width:850px){.hero{grid-template-columns:1fr 230px;gap:20px}.work-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.nav{gap:14px}.about-grid{gap:26px}}@media(max-width:600px){.container{width:calc(100% - 32px)}.header-inner{align-items:flex-start;flex-direction:column;padding:12px 0;gap:8px}.nav{flex-wrap:wrap;gap:15px}.hero{padding:31px 0;grid-template-columns:1fr}.top-stats{gap:0}.stat{gap:5px;display:block;padding:0 12px}.stat b{display:block;font-size:28px}.stat span{font-size:12px}.work-grid{grid-template-columns:1fr;gap:13px}.work-image{height:210px}.work-copy{min-height:0}.section-heading{display:block}.about-grid{grid-template-columns:1fr;gap:26px}.contact-grid{display:block}.contact-info{margin-top:14px}.detail-grid{gap:8px}.detail-photo{height:150px}.detail-photo:first-child{height:210px}.dialog{padding:19px}.section-heading h2{font-size:27px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
-@media (max-width: 768px) {
-    .hero-photo {
-        width: 65%;
-        max-width: 220px;
-        max-height: 260px;
-    }
-}
+
 /* richer editorial sections without oversized whitespace */
 .story-strip{display:grid;grid-template-columns:1.05fr 1fr 1fr;gap:12px;padding:24px 0 10px}.story-strip article{background:#fff;border:1px solid var(--line);padding:20px 22px;border-left:3px solid var(--blue)}.story-strip h3{margin:2px 0 8px;font-size:19px}.story-strip p{margin:0;color:var(--sub);font-size:15px}.story-label{font:700 12px "Noto Serif TC", "Songti TC", "PMingLiU", "SimSun", serif;letter-spacing:.1em;color:var(--accent)}.approach-section{border-top:1px solid var(--line);padding:30px 0}.approach-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px}.approach-card{border:1px solid var(--line);background:#fff;padding:20px}.approach-card h3{margin:0 0 8px;font-size:20px}.approach-card p{margin:0;color:var(--sub);font-size:15px}.detail-info-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0}.detail-info-grid section{border:1px solid #e2e3dc;background:#fff;padding:15px 18px}.detail-info-grid h3{font-size:18px;margin:0 0 6px;color:var(--blue)}.detail-info-grid p{font-size:15px;margin:0}.detail-intro{font-size:17px!important}.work-bullets{display:flex;gap:7px;flex-wrap:wrap;margin-top:11px}.work-bullets span{border:1px solid #e7e3db;background:#f8f7f3;padding:3px 9px;color:#5d696d;font-size:12px}.work-copy{min-height:188px}.work-image{height:177px}.modal .detail-grid{margin-top:14px}.section-eyebrow{display:block;font:700 12px "Noto Serif TC", "Songti TC", "PMingLiU", "SimSun", serif;letter-spacing:.15em;color:var(--accent);margin-bottom:7px}
 @media(max-width:850px){.story-strip{grid-template-columns:1fr 1fr}.approach-grid{grid-template-columns:1fr 1fr}}
@@ -91,7 +71,7 @@ h1 em{color:#375a68}
 .hero-meta span:nth-child(2){background:#e7edf1;border-color:#d3e0e5;color:#577485}
 .hero-meta span:nth-child(3){background:#f5e8dd;border-color:#ead6c6;color:#9e6e52}
 .hero-meta span:nth-child(4){background:#efebf3;border-color:#e0d9e9;color:#80728e}
-.hero-photo{background:#e5ebe6;border-color:#cad7ce;border-radius:12px}
+
 .top-stats{background:#f1f1e9;border-radius:12px;border:1px solid #e1e2d6;padding:21px 12px;margin-top:20px}
 .stat b{color:#476d6d}.stat:nth-child(2) b{color:#b16d55}.stat:nth-child(3) b{color:#84749b}
 .story-strip article:nth-child(1){background:#e9eee9;border-color:#d7e3d7;border-top:4px solid #6b8375}
@@ -141,6 +121,42 @@ h1 em{color:#375a68}
 .detail-highlight{border-top-color:#e4ded3}
 .detail-highlight strong{color:#476c69}
 @media(prefers-reduced-motion:reduce){.work,.work-image img,.filter{transition:none!important}.work:hover{transform:none}}
+
+
+/* ===== 個人照｜自適應尺寸（桌面與手機）===== */
+.hero-photo {
+  width: min(100%, 290px);
+  aspect-ratio: 978 / 1229;
+  height: auto;
+  min-width: 0;
+  justify-self: center;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid #cad7ce;
+  border-radius: 14px;
+  background: #f8f7f3;
+}
+.hero-photo > div {
+  width: 100%;
+  height: 100%;
+}
+.hero-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* 與來源照片比例一致，完整顯示 */
+  object-position: center;
+}
+/* 中型視窗仍留足夠的文字空間 */
+@media (max-width: 850px) and (min-width: 601px) {
+  .hero { grid-template-columns: minmax(0,1fr) minmax(160px,230px); }
+  .hero-photo { width: min(100%, 210px); }
+}
+/* 手機改成上下排列，照片自動縮小 */
+@media (max-width: 600px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero-photo { width: min(60%, 195px); margin: 2px auto 0; }
+}
 
 </style>
 </head>
