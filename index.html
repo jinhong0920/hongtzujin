@@ -158,6 +158,36 @@ h1 em{color:#375a68}
   .hero-photo { width: min(60%, 195px); margin: 2px auto 0; }
 }
 
+
+/* 彈窗照片：不裁切，根據每張成果照片的原始比例呈現 */
+.dialog .detail-cover {
+  width: 100%;
+  height: auto;
+  min-height: 180px;
+  max-height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #f4f2eb;
+}
+.dialog .detail-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 55vh;
+  object-fit: contain;
+  object-position: center;
+}
+.dialog .detail-cover .img-fallback {
+  width: 100%;
+  min-height: 220px;
+}
+@media (max-width: 600px) {
+  .dialog .detail-cover { height: auto; max-height: 48vh; }
+  .dialog .detail-cover img { max-height: 48vh; }
+}
+
 </style>
 </head>
 <body>
